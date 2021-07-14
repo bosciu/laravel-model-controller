@@ -8,7 +8,7 @@ use App\Movie;
 class HomeController extends Controller
 {
     public function index(){
-        dump(Movie::all());
-        return view('homepage');
+        $movies = Movie::all();
+        return view('homepage', compact('movies'));
     }
 }
