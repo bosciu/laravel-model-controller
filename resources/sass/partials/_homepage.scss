@@ -7,9 +7,15 @@ main {
         .card {
             width: calc(100% / 5 - 30px);
             height: 250px;
+            padding: 0 15px;
             background-color: grey;
             border: 1px solid white;
             margin: 15px;
+            h2,
+            h3 {
+                padding: 15px 0;
+                text-align: center;
+            }
         }
     }
 }
